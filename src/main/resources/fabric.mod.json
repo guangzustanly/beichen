@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "beichen",
+  "version": "${version}",
+  "name": "beichen",
+  "description": "Learning",
+  "authors": [
+    "Beichen"
+  ],
+  "contact": {
+    "website": "https://guangzustanly.github.io",
+    "repo": "https://github.com/guangzustanly/Beichen"
+  },
+  "license": "MIT",
+  "icon": "assets/beichen/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.guangzustanly.beichen.client.BeichenClient"
+    ],
+    "main": [
+      "io.github.guangzustanly.beichen.Beichen"
+    ]
+  },
+  "mixins": [
+    "beichen.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
